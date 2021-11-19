@@ -148,6 +148,9 @@ body {
 .dashboard .card.profile .content .btn.active {
   color: white;
 }
+.dashboard .card.profile .content .btn:hover {
+  color: white;
+}
 .dashboard .work .bg-box {
   background-color: #ff8c66;
   background-image: url(../images/icon-work.svg);
