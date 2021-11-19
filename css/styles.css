@@ -67,6 +67,10 @@ body {
   padding: 30px 24px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .dashboard .card .content:hover {
   background-color: #292f70;
