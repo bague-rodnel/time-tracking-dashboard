@@ -1,4 +1,4 @@
-# Frontend Mentor - Time tracking dashboard solution
+# FM - Time tracking dashboard solution
 
 This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -11,10 +11,6 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -24,7 +20,7 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Switch between viewing Daily, Weekly, and Monthly stats
+- Switch between viewing Daily, Weekly, and Monthly stats (_see process_)
 
 ### Screenshots
 
@@ -33,38 +29,26 @@ Users should be able to:
 
 ### Links
 
-[Add live site URL here](https://your-live-site-url.com)
+[View Live Here](https://bague-rodnel.github.io/time-tracking-dashboard/)
 
 ## My process
+
+On the screenshot of the target active states there seems to be a hover/active state for the card body (content) as well as for the ellipsis in the header.
+
+I decided I will do a :hover style on the card body. Turn it off at :active.
+Another :active on the ellipsis.
+
+This way when the ellipsis is :active. The card body returns to normal style and doesn't compete for attention.
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- Sass
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- JavaScript
 
 ### What I learned
 
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I learned that you can fetch a local file with the fetch api if you don't fancy the import approach
