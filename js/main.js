@@ -3,7 +3,7 @@ const buttons = [...document.querySelectorAll(".timeframes .btn")];
 
 let data = null;
 
-fetch("../data.json")
+fetch("data.json")
   .then((rep) => rep.json())
   .then((json) => {
     data = json;
