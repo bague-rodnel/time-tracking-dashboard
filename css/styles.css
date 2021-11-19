@@ -66,6 +66,7 @@ body {
   background-color: #1c1f4a;
   padding: 30px 24px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .dashboard .card .content:hover {
   background-color: #292f70;

@@ -1,12 +1,3 @@
-@use "sass:math";
-
-@function fluid($min, $max, $minvw: 375px, $maxvw: 750px) {
-  @return calc(
-    #{$min} + (#{math.div($max - $min, 1px)}) * ((100vw - #{$minvw}) /
-          (#{math.div($maxvw - $minvw, 1px)}))
-  );
-}
-
 $color-blue: hsl(246, 80%, 60%);
 $color-red-work: hsl(15, 100%, 70%);
 $color-blue-play: hsl(195, 74%, 62%);
@@ -99,6 +90,7 @@ body {
       background-color: $color-blue-d;
       padding: 30px 24px;
       cursor: pointer;
+      transition: background-color 0.3s ease;
 
       &:hover {
         background-color: lighten($color-blue-d, 10%);
