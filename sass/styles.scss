@@ -1,0 +1,210 @@
+@use "sass:math";
+
+@function fluid($min, $max, $minvw: 375px, $maxvw: 750px) {
+  @return calc(
+    #{$min} + (#{math.div($max - $min, 1px)}) * ((100vw - #{$minvw}) /
+          (#{math.div($maxvw - $minvw, 1px)}))
+  );
+}
+
+$color-blue: hsl(246, 80%, 60%);
+$color-red-work: hsl(15, 100%, 70%);
+$color-blue-play: hsl(195, 74%, 62%);
+$color-red-study: hsl(348, 100%, 68%);
+$color-green-exercise: hsl(145, 58%, 55%);
+$color-violet-social: hsl(264, 64%, 52%);
+$color-orange-care: hsl(43, 84%, 65%);
+
+$color-blue-vd: hsl(226, 43%, 10%);
+$color-blue-d: hsl(235, 46%, 20%);
+$color-blue-desat: hsl(235, 45%, 61%);
+$color-blue-pale: hsl(236, 100%, 87%);
+
+$font-wt-lt: 300;
+$font-wt-reg: 400;
+$font-wt-bold: 500;
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: $color-blue-vd;
+  color: white;
+}
+
+.rounded-corners {
+  border-radius: 0.75rem;
+}
+
+.container {
+  width: 87.2vw;
+  margin: 0 auto;
+}
+
+.dashboard {
+  .card {
+    position: relative;
+    // margin-bottom: 24px;
+    margin-bottom: 6.4vw;
+    height: 42.66vw;
+
+    .bg-box {
+      left: 0;
+      bottom: 10px;
+      height: calc(100% - 10px);
+      background-position: right 18px top -10px;
+      background-repeat: no-repeat;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .heading {
+      font-size: 18px;
+      font-weight: $font-wt-bold;
+    }
+
+    .content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      height: 32.533vw;
+      width: 100%;
+      border: 1px solid $color-blue-d;
+      background-color: $color-blue-d;
+      padding: 30px 24px;
+
+      .stats {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .current {
+          font-size: 32px;
+          font-weight: $font-wt-lt;
+        }
+
+        .previous {
+          font-size: 14px;
+          color: $color-blue-pale;
+        }
+      }
+    }
+  }
+
+  .profile {
+    height: 54.1333vw;
+
+    .header {
+      position: absolute;
+      left: 0;
+      bottom: 70px;
+      width: 100%;
+      z-index: 2;
+
+      background-color: $color-blue;
+      padding: 30px 28px;
+      font-size: 20px;
+
+      //flex
+      justify-content: center;
+      gap: 18px;
+
+      .pic {
+        border: 2px solid white;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+      }
+
+      .heading {
+        font-size: 14px;
+        font-weight: normal;
+        color: $color-blue-pale;
+
+        em {
+          display: block;
+          font-size: 22px;
+          font-style: normal;
+          color: white;
+        }
+      }
+    }
+
+    .content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      padding: 0;
+
+      display: flex;
+      justify-content: space-around;
+
+      .btn {
+        border: none;
+        background-color: transparent;
+        color: $color-blue-pale;
+        font-size: 18px;
+        font-family: inherit;
+        font-weight: $font-wt-lt;
+
+        &.active {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .work .bg-box {
+    background-color: $color-red-work;
+    background-image: url(../images/icon-work.svg);
+  }
+
+  .play .bg-box {
+    background-color: $color-blue-play;
+    background-image: url(../images/icon-play.svg);
+  }
+
+  .study .bg-box {
+    background-color: $color-red-study;
+    background-image: url(../images/icon-study.svg);
+  }
+
+  .exercise .bg-box {
+    background-color: $color-green-exercise;
+    background-image: url(../images/icon-exercise.svg);
+  }
+
+  .social .bg-box {
+    background-color: $color-violet-social;
+    background-image: url(../images/icon-social.svg);
+  }
+
+  .self-care .bg-box {
+    background-color: $color-orange-care;
+    background-image: url(../images/icon-self-care.svg);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+  <main>
+    <section class="dashboard">
+      <div class="container">
+        <div class="card profile">
+          <header class="header  rounded-corners">
+            <img class="pic" src="images/image-jeremy.png" alt="">
+            <h1 class="heading">Report for
+              <em>Jeremy Robson</em>
+            </h1>
+          </header>
+          <div class="bg-box">
+            <div class="content timeframes rounded-corners">
+              <button class="btn" data-timeframe="daily" role="button">Daily</button>
+              <button class="btn active" data-timeframe="weekly" role="button">Weekly</button>
+              <button class="btn" data-timeframe="monthly" role="button">Monthly</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card work">
+          <div class="bg-box rounded-corners">
+
+          </div>
+          <div class="content rounded-corners">
+            <header class="header">
+              <h2 class="heading">Work</h2>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </header>
+            <div class="stats">
+              <div class="stat current daily">
+                5hrs
+              </div>
+              <div class="stat previous daily">
+                Yesterday - 7hrs
+              </div>
+              <div class="stat current weekly">
+                32hrs
+              </div>
+              <div class="stat previous weekly">
+                Last Week - 36hrs
+              </div>
+              <div class="stat current monthly">
+                103hrs
+              </div>
+              <div class="stat previous monthly">
+                Last Month - 128hrs
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card play">
+          <div class="bg-box rounded-corners">
+
+          </div>
+          <div class="content rounded-corners">
+            <header class="header">
+              <h2 class="heading">Play</h2>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </header>
+            <div class="stats">
+              <div class="stat current daily">
+                1hr
+              </div>
+              <div class="stat previous daily">
+                Yesterday - 2hrs
+              </div>
+              <div class="stat current weekly">
+                10hrs
+              </div>
+              <div class="stat previous weekly">
+                Last Week - 8hrs
+              </div>
+              <div class="stat current monthly">
+                23hrs
+              </div>
+              <div class="stat previous monthly">
+                Last Month - 29hrs
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card study">
+          <div class="bg-box rounded-corners">
+
+          </div>
+          <div class="content rounded-corners">
+            <header class="header">
+              <h2 class="heading">Study</h2>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </header>
+            <div class="stats">
+              <div class="stat current daily">
+                0hrs
+              </div>
+              <div class="stat previous daily">
+                Yesterday - 1hr
+              </div>
+              <div class="stat current weekly">
+                4hrs
+              </div>
+              <div class="stat previous weekly">
+                Last Week - 7hrs
+              </div>
+              <div class="stat current monthly">
+                13hrs
+              </div>
+              <div class="stat previous monthly">
+                Last Month - 19hrs
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card exercise">
+          <div class="bg-box rounded-corners">
+
+          </div>
+          <div class="content rounded-corners">
+            <header class="header">
+              <h2 class="heading">
+                Exercise
+              </h2>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </header>
+            <div class="stats">
+              <div class="stat current daily">
+                1hr
+              </div>
+              <div class="stat previous daily">
+                Yesterday - 1hr
+              </div>
+              <div class="stat current weekly">
+                4hrs
+              </div>
+              <div class="stat previous weekly">
+                Last Week - 5hrs
+              </div>
+              <div class="stat current monthly">
+                11hrs
+              </div>
+              <div class="stat previous monthly">
+                Last Month - 18hrs
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card social">
+          <div class="bg-box rounded-corners">
+
+          </div>
+          <div class="content rounded-corners">
+            <header class="header">
+              <h2 class="heading">
+                Social
+              </h2>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </header>
+            <div class="stats">
+              <div class="stat current daily">
+                1hr
+              </div>
+              <div class="stat previous daily">
+                Yesterday - 3hrs
+              </div>
+              <div class="stat current weekly">
+                5hrs
+              </div>
+              <div class="stat previous weekly">
+                Last Week - 10hrs
+              </div>
+              <div class="stat current monthly">
+                21hrs
+              </div>
+              <div class="stat previous monthly">
+                Last Month - 23hrs
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card self-care">
+          <div class="bg-box rounded-corners">
+
+          </div>
+          <div class="content rounded-corners">
+            <header class="header">
+              <h2 class="heading">
+                Self Care
+              </h2>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </header>
+            <div class="stats">
+              <div class="stat current daily">
+                0hrs
+              </div>
+              <div class="stat previous daily">
+                Yesterday - 1hr
+              </div>
+              <div class="stat current weekly">
+                2hrs
+              </div>
+              <div class="stat previous weekly">
+                Last Week - 2hrs
+              </div>
+              <div class="stat current monthly">
+                7hrs
+              </div>
+              <div class="stat previous monthly">
+                Last Month - 11hrs
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Rod</a>.
+  </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
